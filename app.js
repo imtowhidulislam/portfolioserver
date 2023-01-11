@@ -4,7 +4,7 @@ import "dotenv/config";
 import mongoose from "mongoose";
 import cors from "cors";
 import projectRoute from "./routes/projectRoute.js";
-import skillRoter from "./routes/skillsRoute.js";
+import skillRouter from "./routes/skillsRoute.js";
 import userRouter from "./routes/userRoutes.js";
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(bodyParser.json());
 app.use("/project", projectRoute);
-app.use("/api/skill", skillRoter);
+app.use("/api/skill", skillRouter);
 app.use("/api/user", userRouter);
 
 // app.use(express.static("./public"));
