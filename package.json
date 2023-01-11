@@ -23,6 +23,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node app.js",
+    "run":"nodemon app.js",
     "build": "nodemon app.js"
   },
   "repository": {

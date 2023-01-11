@@ -7,7 +7,7 @@ import projectRoute from "./routes/projectRoute.js";
 import skillRoter from "./routes/skillsRoute.js";
 import userRouter from "./routes/userRoutes.js";
 const app = express();
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 // ? Settingup All The MiddleWares:::
 app.use(cors());
@@ -28,4 +28,4 @@ mongoose.connect(
   () => console.log("Connected to DB")
 );
 
-app.listen(port, () => console.log(`Server is running on port ${port}`));
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
