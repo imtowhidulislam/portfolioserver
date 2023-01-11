@@ -7,7 +7,7 @@ import projectRoute from "./routes/projectRoute.js";
 import skillRoter from "./routes/skillsRoute.js";
 import userRouter from "./routes/userRoutes.js";
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // ? Settingup All The MiddleWares:::
 app.use(cors());
